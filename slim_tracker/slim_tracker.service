@@ -1,0 +1,16 @@
+[Unit]
+Description=Telegram bot 'Town Wars'
+After=syslog.target
+After=network.target
+
+[Service]
+Type=simple
+User=ubuntu
+WorkingDirectory=/home/ubuntu/slim-tracker/slim_tracker
+Environment="PATH=/home/ubuntu/slim-tracker/.venv/bin:/usr/bin:$PATH"
+ExecStart=/home/ubuntu/slim-tracker/.venv/bin/python3 /home/ubuntu/slim-tracker/slim_tracker/main.py
+RestartSec=10
+Restart=always
+
+[Install]
+WantedBy=multi-user.target

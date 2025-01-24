@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "slim_tracker"
+version = "0.1.0"
+description = ""
+authors = ["Your Name <you@example.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pytz = "^2024.1"
+python-decouple = "^3.8"
+pytelegrambotapi = "^4.22.1"
+speechrecognition = "^3.10.4"
+pydub = "^0.25.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
